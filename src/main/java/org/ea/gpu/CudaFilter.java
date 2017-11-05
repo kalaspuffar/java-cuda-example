@@ -52,7 +52,6 @@ public class CudaFilter {
             g.drawImage(bi, 0, 0, null);
             g.dispose();
 
-
             pixels = grayscaleImg.getRaster().getPixels(0, 0, w, h, pixels);
 
             long start = System.currentTimeMillis();

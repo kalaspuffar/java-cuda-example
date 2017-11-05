@@ -12,7 +12,7 @@ public class VectorAdd {
         JCudaDriver.setExceptionsEnabled(true);
 
         // Create the PTX file by calling the NVCC
-        String ptxFileName = "JCudaVectorAddKernel.ptx";
+        String ptxFileName = "kernels/JCudaVectorAddKernel.ptx";
 
         // Initialize the driver and create a context for the first device.
         cuInit(0);
