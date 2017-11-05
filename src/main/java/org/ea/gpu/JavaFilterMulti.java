@@ -58,8 +58,6 @@ public class JavaFilterMulti {
 
             //int[] resultVertical = runFilter(w, h, pixels, filterDelute);
 
-
-
             System.out.println("Time " + (System.currentTimeMillis() - start));
             grayscaleImg.getRaster().setPixels(0, 0, w, h, resultVertical);
 

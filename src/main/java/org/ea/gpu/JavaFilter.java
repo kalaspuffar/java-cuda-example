@@ -18,12 +18,10 @@ public class JavaFilter {
     public static int[] apply3x3Filter(int imageX, int imageY, int imageWidth, int[] img, int[] filter, int[] newImage) {
 
         float sum = 0f;
-        for(int j=0; j<1000000; j++) {
-            sum = 0f;
-            for (int filterY = 0; filterY < FILTER_SIZE; filterY++) {
-                for (int filterX = 0; filterX < FILTER_SIZE; filterX++) {
-                    sum += img[((imageY + filterY) * imageWidth) + imageX + filterX] * filter[(filterY * FILTER_SIZE) + filterX];
-                }
+        sum = 0f;
+        for (int filterY = 0; filterY < FILTER_SIZE; filterY++) {
+            for (int filterX = 0; filterX < FILTER_SIZE; filterX++) {
+                sum += img[((imageY + filterY) * imageWidth) + imageX + filterX] * filter[(filterY * FILTER_SIZE) + filterX];
             }
         }
 
